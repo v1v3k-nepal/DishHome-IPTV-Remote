@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHITV Remote</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="power-mute-container">
+            <button class="button" id="mute-top" onclick="buttonClick('Mute')"><img class="mute-icon" src="./icons/mute.png" alt="mute"></button>
+            <button class="vibrate-on" id="vibrate-button" onclick="toggleVibrationChoice()">VIBRATION</button>
+            <button class="button" id="Power" onclick="buttonClick('Power')"><img class="power-icon" src="./icons/power.png" alt="power"></button>
+        </div>
+
+        <div class="remote">
+            <button class="button" id="LiveTv" onclick="buttonClick('LiveTv')">Live TV</button>
+            <button class="button" id="Movies" onclick="buttonClick('Movies')">Movies</button>
+            <button class="button" id="Account" onclick="buttonClick('Account')">Account</button>
+            <button class="button" id="Apps" onclick="buttonClick('Apps')">Apps</button>
+            <button class="button" id="Youtube" onclick="buttonClick('Youtube')">YouTube</button>
+            <button class="button" id="Netflix" onclick="buttonClick('Netflix')">Netflix</button>
+            <button class="button" id="Player" onclick="buttonClick('Player')">Player</button>
+            <button class="button" id="Refresh" onclick="buttonClick('Refresh')">Refresh</button>
+            <button class="button" id="Stop" onclick="buttonClick('Stop')">Stop</button>
+            <button class="button" id="Rewind" onclick="buttonClick('Rewind')">Rewind</button>
+            <button class="button" id="Pause" onclick="buttonClick('Pause')">Pause</button>
+            <button class="button" id="Forward" onclick="buttonClick('Forward')">Forward</button>
+        </div>
+
+        <div class="mouse-return-container">
+            <button id="Mouse" onclick="buttonClick('Mouse')"><img class="nav-surround-icons" src="./icons/mouse.png" alt="mouse"></button>
+            <button id="Return" onclick="buttonClick('Return')"><img class="nav-surround-icons" src="./icons/return.png" alt="return"></button>
+        </div>
+
+        <div>
+            <button class="button navBtn" id="NavUp" onclick="buttonClick('NavUp')">Up</button>
+            <div class="NavMiddleBtns">
+                <button class="button navBtn" id="NavLeft" onclick="buttonClick('NavLeft')">Left</button>
+                <button class="button navBtn" id="Ok" onclick="buttonClick('Ok')">OK</button>
+                <button class="button navBtn" id="NavRight" onclick="buttonClick('NavRight')">Right</button>
+            </div>                 
+            <button class="button navBtn" id="NavDown" onclick="buttonClick('NavDown')">Down</button>   
+        </div>
+
+        <div class="home-menu-container">
+            <button class="button" id="Home" onclick="buttonClick('Home')"><img class="nav-surround-icons" src="./icons/home.png" alt="home"></button>
+            <button class="button" id="Menu" onclick="buttonClick('Menu')"><img class="nav-surround-icons" src="./icons/menu.png" alt="menu"></button>
+        </div>
+
+        <div class="vol-ch-container">
+            <div class="up-down">
+                <button class="button" id="VolumeUp" onclick="buttonClick('VolumeUp')">VOL+</button>
+                <button class="button" id="VolumeDown" onclick="buttonClick('VolumeDown')">VOL-</button>
+            </div>
+            <div class="settings-mute-container">
+                <button id="Settings" onclick="buttonClick('Settings')"><img class="settings-icon" src="./icons/setting.png" alt="settings"></button>
+                <button id="mute-bottom" onclick="buttonClick('Mute')"><img class="mute-icon-bottom" src="./icons/mute.png" alt="mute"></button>
+            </div>
+            <div class="up-down">
+                <button class="button" id="ChannelUp" onclick="buttonClick('ChannelUp')">Ch +</button>
+                <button class="button" id="ChannelDown" onclick="buttonClick('ChannelDown')">Ch -</button>
+            </div>
+        </div>
+            
+        <div class="remote">
+            <button class="button" id="One" onclick="buttonClick('One')">1</button>
+            <button class="button" id="Two" onclick="buttonClick('Two')">2</button>
+            <button class="button" id="Three" onclick="buttonClick('Three')">3</button>
+            <button class="button" id="Four" onclick="buttonClick('Four')">4</button>
+            <button class="button" id="Five" onclick="buttonClick('Five')">5</button>
+            <button class="button" id="Six" onclick="buttonClick('Six')">6</button>
+            <button class="button" id="Seven" onclick="buttonClick('Seven')">7</button>
+            <button class="button" id="Eight" onclick="buttonClick('Eight')">8</button>
+            <button class="button" id="Nine" onclick="buttonClick('Nine')">9</button>
+            <button class="button" id="CaseShift" onclick="buttonClick('CaseShift')">1/A/a</button>
+            <button class="button" id="Zero" onclick="buttonClick('Zero')">0</button>
+            <button class="button" id="Delete" onclick="buttonClick('Delete')">Del</button>
+        </div>
+
+        <div class="contact">
+            <a href="https://viveknepal.com.np">
+                <img class="contact-icons" src="./icons/next.png">
+                <img class="contact-icons" src="./icons/message.png">
+                <img class="contact-icons" src="./icons/developer.png">
+            </a>
+        </div>
+
+    </div>
+</body>
+
+<script src="./script.js"></script>
+</html>

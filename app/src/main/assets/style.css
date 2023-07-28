@@ -1,0 +1,321 @@
+body{
+    margin: 30px 10vw;
+}
+
+/* Section for Most Common Classes */
+
+.container{
+    border: 3px solid rgb(0, 17, 255);
+    border-radius: 30px;
+    padding: 3vw;
+    box-shadow: 6px 6px 10px rgba(51, 33, 85, 0.5);
+}
+
+.remote {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 100%));
+    gap: 15px;
+    margin: 0 auto;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 3.5vw;
+    background-image: linear-gradient(to right, #1D976C 0%, #93F9B9  51%, #1D976C  100%);
+    padding: 15px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 10px;
+    border: none;
+}
+
+button:focus {
+    outline: none;
+    animation: scaleDown 0.5s;
+}
+  
+@keyframes scaleDown {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+/* Vibration Section */
+
+.vibrate-on{
+    height: 10vw;
+    border-radius: 40px;
+    background: transparent;
+    color: rgb(24, 156, 6);
+    border: 2.5px solid rgb(7, 146, 7);
+    box-shadow: 3px 3px 6px rgba(55, 32, 160, 0.3);
+    font-size: 2.6vw;
+    width: 22vw;
+}
+
+.vibrate-off{
+    height: 10vw;
+    border-radius: 40px;
+    background: transparent;
+    color: #808080;
+    border: 2.5px solid rgb(172, 172, 172);
+    /* border: 2.5px solid rgb(7, 146, 7); */
+    box-shadow: 3px 3px 6px rgba(55, 32, 160, 0.3);
+    font-size: 2.6vw;
+    width: 22vw;
+}
+
+
+/* Power Button Section */
+
+.power-mute-container{
+    padding: 0 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Power{
+    padding: 0;
+    background: transparent;
+    border-radius: 50%;
+}
+
+.power-icon{
+    width: 13vw;
+}
+
+#mute-top{
+    padding: 0;
+    background: transparent;
+    border-radius: 50%;
+}
+
+.mute-icon{
+    width: 15.2vw;
+}
+
+/* Apps ShortCut Section */
+
+#LiveTv{
+    background-image: linear-gradient(to right, #FF512F 0%, #DD2476  51%, #FF512F  100%);     
+}
+
+#Movies{
+    background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%);
+}
+
+#Account{
+    background-image: linear-gradient(to right, #ff00cc 0%, #333399  51%, #ff00cc  100%);
+}
+
+#Apps{
+    background-image: linear-gradient(to right, #24C6DC 0%, #514A9D  51%, #24C6DC  100%);
+}
+
+#Youtube{
+    background-image: linear-gradient(to right, #ff0486 0%, #830247  51%, #ff0084  100%);
+}
+
+#Netflix{
+    background-image: linear-gradient(to right, #fc00ff 0%, #00dbde  51%, #fc00ff  100%);
+}
+
+#Player{
+    background-image: linear-gradient(to right, #ee0979 0%, #ff6a00  51%, #ee0979  100%);
+}
+
+#Refresh{
+    background-image: linear-gradient(to right, #56ab2f 0%, #a8e063  51%, #56ab2f  100%);
+}
+
+#Rewind{
+    background-image: linear-gradient(to right, #bdc3c7 0%, #2c3e50  51%, #bdc3c7  100%);
+}
+
+#Pause{
+    background-image: linear-gradient(to right, #ffd7ed 0%, #42a7fa  51%, #ffc1e5  100%);
+}
+
+#Stop{
+    background-image: linear-gradient(to right, #9b75c0 0%, #2F0743  51%, #41295a  100%);
+}
+
+#Forward{
+    background-image: linear-gradient(to right, #34e89e 0%, #0f3443  51%, #34e89e  100%);
+}
+
+/* Navigation Surround Section */
+
+.nav-surround-icons{
+    width: 14vw;
+}
+
+.mouse-return-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 10px 0;
+    padding: 0 5px;
+}
+
+.home-menu-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#Mouse{
+    background: transparent;
+    border: none;
+}
+
+#Return{
+    background: transparent;
+    border: none;
+}
+
+#Home{
+    background: transparent;
+}
+
+#Menu{
+    background: transparent;
+}
+
+
+/* Navigation Section */
+
+.navBtn{
+    background-image: linear-gradient(to right, #000046 0%, #1CB5E0  51%, #000046  100%);
+    border-radius: 50%;
+    width: 20vw;
+    height: 15vw;
+}
+
+.NavMiddleBtns{
+    display: flex;
+    justify-content: center;
+    margin: 6vw auto;
+}
+
+.NavMiddleBtns button{
+    margin: 0 15px;
+}
+
+#NavUp, #NavDown{
+    margin: auto;
+}
+
+#Ok{
+    margin: 0 auto;
+}
+
+
+
+/* Volume, Channel, Settings, Mute, Section */
+
+#VolumeUp, #VolumeDown{
+    background: transparent;
+}
+
+#ChannelUp, #ChannelDown{
+    background: transparent;
+}
+
+.vol-ch-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.up-down{
+    background-image: linear-gradient(to bottom, #36D1DC 0%, #5B86E5  51%, #36D1DC  100%);
+    border-radius: 10px;
+    min-height: 35vw;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 28px;
+}
+
+.settings-mute-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#Settings, #mute-bottom{
+    background: transparent;
+    border: none;
+}
+
+.settings-icon{
+    width: 12vw;
+}
+
+.mute-icon-bottom{
+    width: 14.4vw;
+}
+
+
+
+/* Number Pad Section */
+
+#Zero, #One, #Two, #Three, #Four, #Five, #Six, #Seven, #Eight, #Nine{
+    background-image: linear-gradient(to right, #0575E6 0%, #021B79  51%, #0575E6  100%);
+    font-size: 4vw;
+    padding: 12px 10px;
+}
+
+#CaseShift{
+    text-transform: none;
+}
+
+#Delete{
+    background-image: linear-gradient(to right, #f7b56b 0%, #f89ba6  51%, #f8f3f4  100%);
+}
+
+
+
+/* Contact Section */
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.contact a{
+    padding: 2px 10px;
+    border: 2px solid #bfbdfd;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.contact-icons{
+    width: 12vw;
+}
+     
+ 
+ 
+ 
+ 
+ 
